@@ -34,7 +34,7 @@
             "uniqueID": 1744925684622,
             "ioValues": [],
             "description": "Defines a mathematical constant.",
-            "value": 170
+            "value": 250
         },
         {
             "atomType": "Constant",
@@ -54,7 +54,7 @@
             "uniqueID": 1744931063505,
             "ioValues": [],
             "description": "Defines a mathematical constant.",
-            "value": 150
+            "value": 80
         },
         {
             "atomType": "Constant",
@@ -75,7 +75,7 @@
             "ioValues": [
                 {
                     "name": "x length",
-                    "ioValue": 170
+                    "ioValue": 250
                 },
                 {
                     "name": "y length",
@@ -229,7 +229,7 @@
                 },
                 {
                     "name": "zDist",
-                    "ioValue": 150
+                    "ioValue": 80
                 }
             ],
             "description": "Moves a shape laterally in X, Y, Z."
@@ -290,11 +290,11 @@
                 },
                 {
                     "name": "xDist",
-                    "ioValue": 75
+                    "ioValue": 0
                 },
                 {
                     "name": "yDist",
-                    "ioValue": 0
+                    "ioValue": 75
                 },
                 {
                     "name": "zDist",
@@ -311,7 +311,7 @@
             "uniqueID": 1744932458515,
             "ioValues": [],
             "description": "Defines a mathematical constant.",
-            "value": 80
+            "value": 59
         }
     ],
     "allConnectors": [
@@ -408,7 +408,7 @@
         },
         {
             "ap1Name": "result",
-            "ap2Name": "xDist",
+            "ap2Name": "yDist",
             "ap2Primary": false,
             "ap1ID": 1744932235521,
             "ap2ID": 1744932347029
