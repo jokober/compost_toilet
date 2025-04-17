@@ -288,8 +288,8 @@
         {
             "atomType": "Loft",
             "name": "Loft",
-            "x": 0.6093189964157706,
-            "y": 0.6124999999999999,
+            "x": 0.7052966945440063,
+            "y": 0.8,
             "uniqueID": 1744926937469,
             "ioValues": [
                 {
@@ -301,11 +301,11 @@
                     "ioValue": 1744925513876
                 },
                 {
-                    "name": "Shape 6",
-                    "ioValue": 1744926393016
+                    "name": "Shape 7",
+                    "ioValue": 1744927246834
                 },
                 {
-                    "name": "Shape 7",
+                    "name": "Shape 8",
                     "ioValue": ""
                 },
                 {
@@ -317,16 +317,60 @@
                     "ioValue": 1744925513876
                 },
                 {
-                    "name": "Shape 6",
-                    "ioValue": 1744926393016
+                    "name": "Shape 7",
+                    "ioValue": 1744927246834
                 },
                 {
-                    "name": "Shape 7",
+                    "name": "Shape 8",
                     "ioValue": ""
                 }
             ],
             "description": "Joins two or more shapes into a single solid by filling in the space between them. Also called 'hull'",
             "closedSelection": 0
+        },
+        {
+            "atomType": "Move",
+            "name": "Move",
+            "x": 0.4998008761449622,
+            "y": 0.6171875,
+            "uniqueID": 1744927246834,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1744927308809
+                },
+                {
+                    "name": "xDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 20
+                }
+            ],
+            "description": "Moves a shape laterally in X, Y, Z."
+        },
+        {
+            "atomType": "Rectangle",
+            "name": "Rectangle",
+            "x": 0.43448825169255273,
+            "y": 0.584375,
+            "uniqueID": 1744927308809,
+            "ioValues": [
+                {
+                    "name": "x length",
+                    "ioValue": 100
+                },
+                {
+                    "name": "y length",
+                    "ioValue": 100
+                }
+            ],
+            "description": "Creates a new rectangle."
         }
     ],
     "allConnectors": [
@@ -388,13 +432,6 @@
         },
         {
             "ap1Name": "geometry",
-            "ap2Name": "Shape 6",
-            "ap2Primary": false,
-            "ap1ID": 1744926393016,
-            "ap2ID": 1744926937469
-        },
-        {
-            "ap1Name": "geometry",
             "ap2Name": "geometry",
             "ap2Primary": true,
             "ap1ID": 1744926796258,
@@ -413,6 +450,20 @@
             "ap2Primary": false,
             "ap1ID": 1744926937469,
             "ap2ID": 1744925386220
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "Shape 7",
+            "ap2Primary": false,
+            "ap1ID": 1744927246834,
+            "ap2ID": 1744926937469
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 1744927308809,
+            "ap2ID": 1744927246834
         }
     ],
     "unitsKey": "MM",
