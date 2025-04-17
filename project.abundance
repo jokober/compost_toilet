@@ -250,11 +250,11 @@
             "ioValues": [
                 {
                     "name": "x length",
-                    "ioValue": 200
+                    "ioValue": 245
                 },
                 {
                     "name": "y length",
-                    "ioValue": 200
+                    "ioValue": 240
                 }
             ],
             "description": "Creates a new rectangle."
@@ -272,7 +272,7 @@
                 },
                 {
                     "name": "xDist",
-                    "ioValue": -100
+                    "ioValue": -80
                 },
                 {
                     "name": "yDist",
@@ -280,7 +280,7 @@
                 },
                 {
                     "name": "zDist",
-                    "ioValue": 150
+                    "ioValue": 90
                 }
             ],
             "description": "Moves a shape laterally in X, Y, Z."
@@ -357,7 +357,7 @@
                 },
                 {
                     "name": "zDist",
-                    "ioValue": 20
+                    "ioValue": 40
                 }
             ],
             "description": "Moves a shape laterally in X, Y, Z."
