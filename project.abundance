@@ -288,8 +288,8 @@
         {
             "atomType": "Loft",
             "name": "Loft",
-            "x": 0.7052966945440063,
-            "y": 0.8,
+            "x": 0.675826363998407,
+            "y": 0.675,
             "uniqueID": 1744926937469,
             "ioValues": [
                 {
@@ -371,11 +371,11 @@
             "ioValues": [
                 {
                     "name": "x length",
-                    "ioValue": 160
+                    "ioValue": 180
                 },
                 {
                     "name": "y length",
-                    "ioValue": 160
+                    "ioValue": 180
                 }
             ],
             "description": "Creates a new rectangle."
