@@ -145,8 +145,8 @@
                     "ioValue": 1744924499002
                 },
                 {
-                    "name": "Shape 4",
-                    "ioValue": 1744926225760
+                    "name": "Shape 5",
+                    "ioValue": 1744926937469
                 }
             ],
             "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
@@ -202,41 +202,6 @@
             "value": 10
         },
         {
-            "atomType": "Loft",
-            "name": "Loft",
-            "x": 0.3711668657905217,
-            "y": 0.6390625,
-            "uniqueID": 1744926225760,
-            "ioValues": [
-                {
-                    "name": "Shape 1",
-                    "ioValue": 1744925513876
-                },
-                {
-                    "name": "Shape 3",
-                    "ioValue": 1744926393016
-                },
-                {
-                    "name": "Shape 4",
-                    "ioValue": ""
-                },
-                {
-                    "name": "Shape 1",
-                    "ioValue": 1744925513876
-                },
-                {
-                    "name": "Shape 3",
-                    "ioValue": 1744926393016
-                },
-                {
-                    "name": "Shape 4",
-                    "ioValue": ""
-                }
-            ],
-            "description": "Joins two or more shapes into a single solid by filling in the space between them. Also called 'hull'",
-            "closedSelection": 0
-        },
-        {
             "atomType": "Circle",
             "name": "Circle",
             "x": 0.12943050577459178,
@@ -275,6 +240,93 @@
                 }
             ],
             "description": "Moves a shape laterally in X, Y, Z."
+        },
+        {
+            "atomType": "Rectangle",
+            "name": "Rectangle",
+            "x": 0.4281162883313421,
+            "y": 0.40468750000000003,
+            "uniqueID": 1744926796258,
+            "ioValues": [
+                {
+                    "name": "x length",
+                    "ioValue": 200
+                },
+                {
+                    "name": "y length",
+                    "ioValue": 200
+                }
+            ],
+            "description": "Creates a new rectangle."
+        },
+        {
+            "atomType": "Move",
+            "name": "Move",
+            "x": 0.5328554360812425,
+            "y": 0.4203125,
+            "uniqueID": 1744926872585,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1744926796258
+                },
+                {
+                    "name": "xDist",
+                    "ioValue": -100
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 150
+                }
+            ],
+            "description": "Moves a shape laterally in X, Y, Z."
+        },
+        {
+            "atomType": "Loft",
+            "name": "Loft",
+            "x": 0.6093189964157706,
+            "y": 0.6124999999999999,
+            "uniqueID": 1744926937469,
+            "ioValues": [
+                {
+                    "name": "Shape 3",
+                    "ioValue": 1744926872585
+                },
+                {
+                    "name": "Shape 5",
+                    "ioValue": 1744925513876
+                },
+                {
+                    "name": "Shape 6",
+                    "ioValue": 1744926393016
+                },
+                {
+                    "name": "Shape 7",
+                    "ioValue": ""
+                },
+                {
+                    "name": "Shape 3",
+                    "ioValue": 1744926872585
+                },
+                {
+                    "name": "Shape 5",
+                    "ioValue": 1744925513876
+                },
+                {
+                    "name": "Shape 6",
+                    "ioValue": 1744926393016
+                },
+                {
+                    "name": "Shape 7",
+                    "ioValue": ""
+                }
+            ],
+            "description": "Joins two or more shapes into a single solid by filling in the space between them. Also called 'hull'",
+            "closedSelection": 0
         }
     ],
     "allConnectors": [
@@ -322,17 +374,10 @@
         },
         {
             "ap1Name": "geometry",
-            "ap2Name": "Shape 1",
+            "ap2Name": "Shape 5",
             "ap2Primary": false,
             "ap1ID": 1744925513876,
-            "ap2ID": 1744926225760
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "Shape 4",
-            "ap2Primary": false,
-            "ap1ID": 1744926225760,
-            "ap2ID": 1744925386220
+            "ap2ID": 1744926937469
         },
         {
             "ap1Name": "geometry",
@@ -343,10 +388,31 @@
         },
         {
             "ap1Name": "geometry",
-            "ap2Name": "Shape 3",
+            "ap2Name": "Shape 6",
             "ap2Primary": false,
             "ap1ID": 1744926393016,
-            "ap2ID": 1744926225760
+            "ap2ID": 1744926937469
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 1744926796258,
+            "ap2ID": 1744926872585
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "Shape 3",
+            "ap2Primary": false,
+            "ap1ID": 1744926872585,
+            "ap2ID": 1744926937469
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "Shape 5",
+            "ap2Primary": false,
+            "ap1ID": 1744926937469,
+            "ap2ID": 1744925386220
         }
     ],
     "unitsKey": "MM",
