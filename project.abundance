@@ -75,17 +75,79 @@
             "ioValues": [
                 {
                     "name": "x length",
-                    "ioValue": 10
+                    "ioValue": 170
                 },
                 {
                     "name": "y length",
-                    "ioValue": 10
+                    "ioValue": 250
                 }
             ],
             "description": "Creates a new rectangle."
+        },
+        {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.21027479091995221,
+            "y": 0.6046875,
+            "uniqueID": 1744931519200,
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 10
+                }
+            ],
+            "description": "Creates a new circle."
+        },
+        {
+            "atomType": "Rotate",
+            "name": "Rotate",
+            "x": 0.31740342493030665,
+            "y": 0.6124999999999999,
+            "uniqueID": 1744931526638,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1744931519200
+                },
+                {
+                    "name": "x-axis degrees",
+                    "ioValue": 0
+                },
+                {
+                    "name": "y-axis degrees",
+                    "ioValue": 60
+                },
+                {
+                    "name": "z-axis degrees",
+                    "ioValue": 0
+                }
+            ],
+            "description": "Rotates the input geometry around the X, Y, or Z axis. Inputs are degrees."
         }
     ],
-    "allConnectors": [],
+    "allConnectors": [
+        {
+            "ap1Name": "number",
+            "ap2Name": "x length",
+            "ap2Primary": false,
+            "ap1ID": 1744925684622,
+            "ap2ID": 1744931278800
+        },
+        {
+            "ap1Name": "number",
+            "ap2Name": "y length",
+            "ap2Primary": false,
+            "ap1ID": 1744929523687,
+            "ap2ID": 1744931278800
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 1744931519200,
+            "ap2ID": 1744931526638
+        }
+    ],
     "unitsKey": "MM",
     "fileTypeVersion": 1,
     "compiledBom": {},
