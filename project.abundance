@@ -196,6 +196,81 @@
             "ioValues": [],
             "description": "Defines a mathematical constant.",
             "value": 10
+        },
+        {
+            "atomType": "Loft",
+            "name": "Loft",
+            "x": 0.3711668657905217,
+            "y": 0.6390625,
+            "uniqueID": 1744926225760,
+            "ioValues": [
+                {
+                    "name": "Shape 1",
+                    "ioValue": 1744925513876
+                },
+                {
+                    "name": "Shape 3",
+                    "ioValue": 1744926393016
+                },
+                {
+                    "name": "Shape 4",
+                    "ioValue": ""
+                },
+                {
+                    "name": "Shape 1",
+                    "ioValue": 1744925513876
+                },
+                {
+                    "name": "Shape 3",
+                    "ioValue": 1744926393016
+                },
+                {
+                    "name": "Shape 4",
+                    "ioValue": ""
+                }
+            ],
+            "description": "Joins two or more shapes into a single solid by filling in the space between them. Also called 'hull'",
+            "closedSelection": 0
+        },
+        {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.12943050577459178,
+            "y": 0.828125,
+            "uniqueID": 1744926291160,
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 50
+                }
+            ],
+            "description": "Creates a new circle."
+        },
+        {
+            "atomType": "Move",
+            "name": "Move",
+            "x": 0.2716049382716049,
+            "y": 0.8562500000000001,
+            "uniqueID": 1744926393016,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1744926291160
+                },
+                {
+                    "name": "xDist",
+                    "ioValue": 250
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": -20
+                }
+            ],
+            "description": "Moves a shape laterally in X, Y, Z."
         }
     ],
     "allConnectors": [
@@ -240,6 +315,27 @@
             "ap2Primary": true,
             "ap1ID": 1744925492547,
             "ap2ID": 1744925513876
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "Shape 1",
+            "ap2Primary": false,
+            "ap1ID": 1744925513876,
+            "ap2ID": 1744926225760
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 1744926291160,
+            "ap2ID": 1744926393016
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "Shape 3",
+            "ap2Primary": false,
+            "ap1ID": 1744926393016,
+            "ap2ID": 1744926225760
         }
     ],
     "unitsKey": "MM",
