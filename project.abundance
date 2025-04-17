@@ -177,7 +177,7 @@
             "ioValues": [
                 {
                     "name": "geometry",
-                    "ioValue": ""
+                    "ioValue": 1744933658080
                 },
                 {
                     "name": "xDist",
@@ -282,14 +282,32 @@
             "ioValues": [
                 {
                     "name": "x length",
-                    "ioValue": 10
+                    "ioValue": 40
                 },
                 {
                     "name": "y length",
-                    "ioValue": 10
+                    "ioValue": 16
                 }
             ],
             "description": "Creates a new rectangle."
+        },
+        {
+            "atomType": "Extrude",
+            "name": "Extrude",
+            "x": 0.4970131421744325,
+            "y": 0.859375,
+            "uniqueID": 1744933899281,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1744933658080
+                },
+                {
+                    "name": "height",
+                    "ioValue": 100
+                }
+            ],
+            "description": "Extrudes a 2D shape. Input can be negitive. "
         }
     ],
     "allConnectors": [
@@ -397,6 +415,20 @@
             "ap2Primary": false,
             "ap1ID": 1744932458515,
             "ap2ID": 1744932347029
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 1744933658080,
+            "ap2ID": 1744931858310
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 1744933658080,
+            "ap2ID": 1744933899281
         }
     ],
     "unitsKey": "MM",
