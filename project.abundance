@@ -143,14 +143,6 @@
                 {
                     "name": "Shape 1",
                     "ioValue": 1744924499002
-                },
-                {
-                    "name": "Shape 2",
-                    "ioValue": 1744924912612
-                },
-                {
-                    "name": "Shape 3",
-                    "ioValue": 1744925513876
                 }
             ],
             "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
@@ -194,6 +186,16 @@
                 }
             ],
             "description": "Moves a shape laterally in X, Y, Z."
+        },
+        {
+            "atomType": "Constant",
+            "name": "Constant",
+            "x": 0.03584229390681004,
+            "y": 0.19687500000000002,
+            "uniqueID": 1744925684622,
+            "ioValues": [],
+            "description": "Defines a mathematical constant.",
+            "value": 10
         }
     ],
     "allConnectors": [
@@ -234,24 +236,10 @@
         },
         {
             "ap1Name": "geometry",
-            "ap2Name": "Shape 2",
-            "ap2Primary": false,
-            "ap1ID": 1744924912612,
-            "ap2ID": 1744925386220
-        },
-        {
-            "ap1Name": "geometry",
             "ap2Name": "geometry",
             "ap2Primary": true,
             "ap1ID": 1744925492547,
             "ap2ID": 1744925513876
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "Shape 3",
-            "ap2Primary": false,
-            "ap1ID": 1744925513876,
-            "ap2ID": 1744925386220
         }
     ],
     "unitsKey": "MM",
