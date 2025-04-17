@@ -64,7 +64,7 @@
             "uniqueID": 1744931091767,
             "ioValues": [],
             "description": "Defines a mathematical constant.",
-            "value": 10
+            "value": 150
         },
         {
             "atomType": "Rectangle",
@@ -225,6 +225,85 @@
                 }
             ],
             "description": "Moves a shape laterally in X, Y, Z."
+        },
+        {
+            "atomType": "Constant",
+            "name": "mid level depth",
+            "x": 0.026682596575069693,
+            "y": 0.76875,
+            "uniqueID": 1744932211234,
+            "ioValues": [],
+            "description": "Defines a mathematical constant.",
+            "value": 10
+        },
+        {
+            "atomType": "Equation",
+            "name": "x/2",
+            "x": 0.1270410195141378,
+            "y": 0.8921875,
+            "uniqueID": 1744932235521,
+            "ioValues": [
+                {
+                    "name": "x",
+                    "ioValue": 10
+                }
+            ],
+            "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
+            "currentEquation": "x/2"
+        },
+        {
+            "atomType": "Rectangle",
+            "name": "Rectangle",
+            "x": 0.2250099561927519,
+            "y": 0.8359375000000001,
+            "uniqueID": 1744932297008,
+            "ioValues": [
+                {
+                    "name": "x length",
+                    "ioValue": 150
+                },
+                {
+                    "name": "y length",
+                    "ioValue": 10
+                }
+            ],
+            "description": "Creates a new rectangle."
+        },
+        {
+            "atomType": "Move",
+            "name": "Move",
+            "x": 0.30147351652728,
+            "y": 0.85,
+            "uniqueID": 1744932347029,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1744932297008
+                },
+                {
+                    "name": "xDist",
+                    "ioValue": 5
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 0
+                }
+            ],
+            "description": "Moves a shape laterally in X, Y, Z."
+        },
+        {
+            "atomType": "Constant",
+            "name": "Constant",
+            "x": 0.5647152528872958,
+            "y": 0.675,
+            "uniqueID": 1744932458515,
+            "ioValues": [],
+            "description": "Defines a mathematical constant.",
+            "value": 10
         }
     ],
     "allConnectors": [
@@ -255,6 +334,13 @@
             "ap2Primary": false,
             "ap1ID": 1744931063505,
             "ap2ID": 1744931858310
+        },
+        {
+            "ap1Name": "number",
+            "ap2Name": "x length",
+            "ap2Primary": false,
+            "ap1ID": 1744931091767,
+            "ap2ID": 1744932297008
         },
         {
             "ap1Name": "geometry",
@@ -297,6 +383,34 @@
             "ap2Primary": false,
             "ap1ID": 1744931858310,
             "ap2ID": 1744931828856
+        },
+        {
+            "ap1Name": "number",
+            "ap2Name": "x",
+            "ap2Primary": false,
+            "ap1ID": 1744932211234,
+            "ap2ID": 1744932235521
+        },
+        {
+            "ap1Name": "number",
+            "ap2Name": "y length",
+            "ap2Primary": false,
+            "ap1ID": 1744932211234,
+            "ap2ID": 1744932297008
+        },
+        {
+            "ap1Name": "result",
+            "ap2Name": "xDist",
+            "ap2Primary": false,
+            "ap1ID": 1744932235521,
+            "ap2ID": 1744932347029
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 1744932297008,
+            "ap2ID": 1744932347029
         }
     ],
     "unitsKey": "MM",
