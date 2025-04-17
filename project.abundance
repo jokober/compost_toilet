@@ -87,8 +87,8 @@
         {
             "atomType": "Circle",
             "name": "Circle",
-            "x": 0.21027479091995221,
-            "y": 0.6046875,
+            "x": 0.19912385503783353,
+            "y": 0.571875,
             "uniqueID": 1744931519200,
             "ioValues": [
                 {
@@ -101,8 +101,8 @@
         {
             "atomType": "Rotate",
             "name": "Rotate",
-            "x": 0.2724014336917563,
-            "y": 0.6609375000000001,
+            "x": 0.2827558741537236,
+            "y": 0.5375,
             "uniqueID": 1744931526638,
             "ioValues": [
                 {
@@ -111,7 +111,7 @@
                 },
                 {
                     "name": "x-axis degrees",
-                    "ioValue": -60
+                    "ioValue": 60
                 },
                 {
                     "name": "y-axis degrees",
@@ -211,8 +211,8 @@
         {
             "atomType": "Move",
             "name": "Move",
-            "x": 0.36519315013938675,
-            "y": 0.6812499999999999,
+            "x": 0.333731581043409,
+            "y": 0.403125,
             "uniqueID": 1744931858310,
             "ioValues": [
                 {
@@ -280,8 +280,8 @@
         {
             "atomType": "Move",
             "name": "Move",
-            "x": 0.30147351652728,
-            "y": 0.85,
+            "x": 0.35802469135802467,
+            "y": 0.8015625000000001,
             "uniqueID": 1744932347029,
             "ioValues": [
                 {
@@ -298,7 +298,7 @@
                 },
                 {
                     "name": "zDist",
-                    "ioValue": 80
+                    "ioValue": 50
                 }
             ],
             "description": "Moves a shape laterally in X, Y, Z."
@@ -311,7 +311,7 @@
             "uniqueID": 1744932458515,
             "ioValues": [],
             "description": "Defines a mathematical constant.",
-            "value": 59
+            "value": 50
         }
     ],
     "allConnectors": [
@@ -426,6 +426,13 @@
             "ap2Primary": false,
             "ap1ID": 1744932347029,
             "ap2ID": 1744931828856
+        },
+        {
+            "ap1Name": "number",
+            "ap2Name": "zDist",
+            "ap2Primary": false,
+            "ap1ID": 1744932458515,
+            "ap2ID": 1744932347029
         }
     ],
     "unitsKey": "MM",
