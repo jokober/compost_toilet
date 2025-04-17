@@ -58,7 +58,7 @@
         },
         {
             "atomType": "Constant",
-            "name": "Constant",
+            "name": "mid level width",
             "x": 0.02867383512544803,
             "y": 0.63125,
             "uniqueID": 1744931091767,
@@ -178,6 +178,10 @@
                 },
                 {
                     "name": "Shape 3",
+                    "ioValue": 1744931858310
+                },
+                {
+                    "name": "Shape 4",
                     "ioValue": ""
                 },
                 {
@@ -186,6 +190,10 @@
                 },
                 {
                     "name": "Shape 3",
+                    "ioValue": 1744931858310
+                },
+                {
+                    "name": "Shape 4",
                     "ioValue": ""
                 }
             ],
@@ -213,7 +221,7 @@
                 },
                 {
                     "name": "zDist",
-                    "ioValue": 0
+                    "ioValue": 150
                 }
             ],
             "description": "Moves a shape laterally in X, Y, Z."
@@ -240,6 +248,13 @@
             "ap2Primary": false,
             "ap1ID": 1744929523687,
             "ap2ID": 1744931623531
+        },
+        {
+            "ap1Name": "number",
+            "ap2Name": "zDist",
+            "ap2Primary": false,
+            "ap1ID": 1744931063505,
+            "ap2ID": 1744931858310
         },
         {
             "ap1Name": "geometry",
@@ -275,6 +290,13 @@
             "ap2Primary": false,
             "ap1ID": 1744931623531,
             "ap2ID": 1744931601234
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "Shape 3",
+            "ap2Primary": false,
+            "ap1ID": 1744931858310,
+            "ap2ID": 1744931828856
         }
     ],
     "unitsKey": "MM",
