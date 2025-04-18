@@ -168,7 +168,7 @@
             "ioValues": [
                 {
                     "name": "geometry",
-                    "ioValue": 1744933658080
+                    "ioValue": 1744934308527
                 },
                 {
                     "name": "xDist",
@@ -265,28 +265,10 @@
             "value": 30
         },
         {
-            "atomType": "Rectangle",
-            "name": "Rectangle",
-            "x": 0.26802070888092394,
-            "y": 0.58125,
-            "uniqueID": 1744933658080,
-            "ioValues": [
-                {
-                    "name": "x length",
-                    "ioValue": 40
-                },
-                {
-                    "name": "y length",
-                    "ioValue": 16
-                }
-            ],
-            "description": "Creates a new rectangle."
-        },
-        {
             "atomType": "Extrude",
             "name": "Extrude",
-            "x": 0.5957785742731979,
-            "y": 0.88125,
+            "x": 0.616089207487057,
+            "y": 0.709375,
             "uniqueID": 1744933899281,
             "ioValues": [
                 {
@@ -303,8 +285,8 @@
         {
             "atomType": "Fusion",
             "name": "Fusion",
-            "x": 0.6320191158900836,
-            "y": 0.5796875,
+            "x": 0.6798088410991637,
+            "y": 0.3203125,
             "uniqueID": 1744934027334,
             "ioValues": [
                 {
@@ -322,13 +304,13 @@
         {
             "atomType": "Move",
             "name": "Move",
-            "x": 0.46953405017921146,
-            "y": 0.88125,
+            "x": 0.4934289127837515,
+            "y": 0.7046874999999999,
             "uniqueID": 1744934080003,
             "ioValues": [
                 {
                     "name": "geometry",
-                    "ioValue": 1744933658080
+                    "ioValue": ""
                 },
                 {
                     "name": "xDist",
@@ -344,6 +326,30 @@
                 }
             ],
             "description": "Moves a shape laterally in X, Y, Z."
+        },
+        {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.29072082835523694,
+            "y": 0.56875,
+            "uniqueID": 1744934308527,
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 16
+                }
+            ],
+            "description": "Creates a new circle."
+        },
+        {
+            "atomType": "Constant",
+            "name": "connector diameter",
+            "x": 0.16527279968140185,
+            "y": 0.615625,
+            "uniqueID": 1744934349628,
+            "ioValues": [],
+            "description": "Defines a mathematical constant.",
+            "value": 16
         }
     ],
     "allConnectors": [
@@ -468,20 +474,6 @@
         },
         {
             "ap1Name": "geometry",
-            "ap2Name": "geometry",
-            "ap2Primary": true,
-            "ap1ID": 1744933658080,
-            "ap2ID": 1744931858310
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "geometry",
-            "ap2Primary": true,
-            "ap1ID": 1744933658080,
-            "ap2ID": 1744934080003
-        },
-        {
-            "ap1Name": "geometry",
             "ap2Name": "Shape 2",
             "ap2Primary": false,
             "ap1ID": 1744933899281,
@@ -493,6 +485,20 @@
             "ap2Primary": true,
             "ap1ID": 1744934080003,
             "ap2ID": 1744933899281
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 1744934308527,
+            "ap2ID": 1744931858310
+        },
+        {
+            "ap1Name": "number",
+            "ap2Name": "diameter",
+            "ap2Primary": false,
+            "ap1ID": 1744934349628,
+            "ap2ID": 1744934308527
         }
     ],
     "unitsKey": "MM",
