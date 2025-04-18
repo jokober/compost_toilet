@@ -162,8 +162,8 @@
         {
             "atomType": "Move",
             "name": "Move",
-            "x": 0.333731581043409,
-            "y": 0.403125,
+            "x": 0.352847471127041,
+            "y": 0.384375,
             "uniqueID": 1744931858310,
             "ioValues": [
                 {
@@ -330,8 +330,8 @@
         {
             "atomType": "Circle",
             "name": "Circle",
-            "x": 0.29072082835523694,
-            "y": 0.56875,
+            "x": 0.2648347272003186,
+            "y": 0.384375,
             "uniqueID": 1744934308527,
             "ioValues": [
                 {
@@ -343,13 +343,23 @@
         },
         {
             "atomType": "Constant",
-            "name": "connector diameter",
-            "x": 0.16527279968140185,
-            "y": 0.615625,
+            "name": "connector wall thickness",
+            "x": 0.1656710473914775,
+            "y": 0.690625,
             "uniqueID": 1744934349628,
             "ioValues": [],
             "description": "Defines a mathematical constant.",
             "value": 16
+        },
+        {
+            "atomType": "Constant",
+            "name": "connector wall thickness",
+            "x": 0.16367980884109914,
+            "y": 0.5578124999999999,
+            "uniqueID": 1744935085459,
+            "ioValues": [],
+            "description": "Defines a mathematical constant.",
+            "value": 10
         }
     ],
     "allConnectors": [
