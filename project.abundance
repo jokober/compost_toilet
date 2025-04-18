@@ -176,7 +176,7 @@
                 },
                 {
                     "name": "yDist",
-                    "ioValue": 0
+                    "ioValue": -4
                 },
                 {
                     "name": "zDist",
@@ -310,7 +310,7 @@
             "ioValues": [
                 {
                     "name": "geometry",
-                    "ioValue": ""
+                    "ioValue": 1744934308527
                 },
                 {
                     "name": "xDist",
@@ -318,7 +318,7 @@
                 },
                 {
                     "name": "yDist",
-                    "ioValue": 0
+                    "ioValue": -4
                 },
                 {
                     "name": "zDist",
@@ -492,6 +492,13 @@
             "ap2Primary": true,
             "ap1ID": 1744934308527,
             "ap2ID": 1744931858310
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 1744934308527,
+            "ap2ID": 1744934080003
         },
         {
             "ap1Name": "number",
