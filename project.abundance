@@ -374,6 +374,10 @@
                 },
                 {
                     "name": "Shape 3",
+                    "ioValue": 1745439642370
+                },
+                {
+                    "name": "Shape 4",
                     "ioValue": ""
                 },
                 {
@@ -382,6 +386,10 @@
                 },
                 {
                     "name": "Shape 3",
+                    "ioValue": 1745439642370
+                },
+                {
+                    "name": "Shape 4",
                     "ioValue": ""
                 }
             ],
@@ -396,14 +404,28 @@
             "ioValues": [
                 {
                     "name": "x length",
-                    "ioValue": 200
+                    "ioValue": 100
                 },
                 {
                     "name": "y length",
-                    "ioValue": 200
+                    "ioValue": 100
                 }
             ],
             "description": "Creates a new rectangle."
+        },
+        {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.7411389884508164,
+            "y": 0.25625000000000003,
+            "uniqueID": 1745439642370,
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 200
+                }
+            ],
+            "description": "Creates a new circle."
         }
     ],
     "allConnectors": [
@@ -566,6 +588,13 @@
             "ap2Name": "Shape 2",
             "ap2Primary": false,
             "ap1ID": 1745439565470,
+            "ap2ID": 1745439499271
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "Shape 3",
+            "ap2Primary": false,
+            "ap1ID": 1745439642370,
             "ap2ID": 1745439499271
         }
     ],
