@@ -360,6 +360,50 @@
             "ioValues": [],
             "description": "Defines a mathematical constant.",
             "value": 10
+        },
+        {
+            "atomType": "ShrinkWrap",
+            "name": "Shrink Wrap",
+            "x": 0.7654320987654322,
+            "y": 0.4859375,
+            "uniqueID": 1745439499271,
+            "ioValues": [
+                {
+                    "name": "Shape 2",
+                    "ioValue": 1745439565470
+                },
+                {
+                    "name": "Shape 3",
+                    "ioValue": ""
+                },
+                {
+                    "name": "Shape 2",
+                    "ioValue": 1745439565470
+                },
+                {
+                    "name": "Shape 3",
+                    "ioValue": ""
+                }
+            ],
+            "description": "Joins two or more drawings into a single sketch by filling in the space between them. Also called 'hull'"
+        },
+        {
+            "atomType": "Rectangle",
+            "name": "Rectangle",
+            "x": 0.7303863002787735,
+            "y": 0.709375,
+            "uniqueID": 1745439565470,
+            "ioValues": [
+                {
+                    "name": "x length",
+                    "ioValue": 200
+                },
+                {
+                    "name": "y length",
+                    "ioValue": 200
+                }
+            ],
+            "description": "Creates a new rectangle."
         }
     ],
     "allConnectors": [
@@ -516,6 +560,13 @@
             "ap2Primary": false,
             "ap1ID": 1744934349628,
             "ap2ID": 1744934308527
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "Shape 2",
+            "ap2Primary": false,
+            "ap1ID": 1745439565470,
+            "ap2ID": 1745439499271
         }
     ],
     "unitsKey": "MM",
